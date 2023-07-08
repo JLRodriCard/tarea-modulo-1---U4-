@@ -12,8 +12,9 @@
     <main>          
         <section>
             <h1> JORGE LUIS RODRIGUEZ</h1>
-
-            <img src="imagenes/fotocv.jpg" alt="fotoJLRCV">
+            <div id="imagen_central">
+                <img src="imagenes/fotocv.jpg" alt="fotoJLRCV">
+            </div>
 
 
         </section>
@@ -22,7 +23,7 @@
             <h3>Domicilio: Cabari 708 - Colonia del Sacramento</h3>
             <h4>Series favoritas:</h4> 
 
-            <ol> 
+            <ol class="resaltado"> 
                 <li> La casa de Papel</li>
                 <li> Perfil Falso</li>
                 <li> Click Byte</li>
@@ -32,7 +33,7 @@
             </ol>
 
             <h4>Peliculas favoritas:</h4> 
-            <ol> 
+            <ol class="resaltado"> 
                 <li> Gladiador</li>
                 <li> Naufrago</li>
                 <li> Avatar</li>
@@ -46,9 +47,9 @@
 
         <section>
             <h4>Perfil:</h4>
-            <p> Soy una Persona organizada, responsable y proactiva</p>
-            <p> Orientacion a resultados y capacidad de adaptacion a diversos sistemas de trabajo </p>
-            <p> vocacion de trabajo en equipo </p>
+            <p class="resaltado"> Soy una Persona organizada, responsable y proactiva
+            Orientacion a resultados y capacidad de adaptacion a diversos sistemas de trabajo
+            vocacion de trabajo en equipo </p>
 
         
         </section>
@@ -61,25 +62,26 @@
     <footer>
 
         <p> <strong> Si queres contactarme podes completar el siguiente formulario </strong></p>
+        <div id="formulario_formato">
+            <form action="codigo.php" method="post">
 
-        <form action="codigo.php" method="post">
+                <label>Nombre *</label>
+                <br>
+                <input type="text" required placeholder="Nombre">
+                <br>
+                <label>Email principal y de referencia *</label>
+                <br>
+                <input type="email" placeholder="info@mimail.com" required>
+                <br>
+                <label>Mensaje *</label>
+                <br>
+                <textarea required></textarea>
 
-            <label>Nombre *</label>
-            <br>
-            <input type="text" required placeholder="Nombre">
-            <br>
-            <label>Email principal y de referencia *</label>
-            <br>
-            <input type="email" placeholder="info@mimail.com" required>
-            <br>
-            <label>Mensaje *</label>
-            <br>
-            <textarea required></textarea>
+                <button>Enviar consulta</button>
+                <input type="reset" value="Borrar">
 
-            <button>Enviar consulta</button>
-            <input type="reset" value="Borrar">
-
-        </form>
+            </form>
+        </div>
 
 
 
